@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Colors</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Turn On/Off color</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-button (click)="OnColor()" color="success">Turn On</ion-button>
+      <ion-button (click)="OffColor()" color="danger">Turn Off</ion-button>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Change color</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <input (colorPickerChange)="updateColor()" [(colorPicker)]="colorhex" [cpOutputFormat]="'hex'"
+             [style.background]="colorhex"/>
+      <ion-label position="floating">Duration (sec)</ion-label>
+      <ion-input [(ngModel)]="duration" type="number" value="2"></ion-input>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Color Effect</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Light Effect</ion-label>
+      <ion-input [(ngModel)]="lighteffect" type="number" value="2"></ion-input>
+      <ion-label position="floating">Brightness</ion-label>
+      <ion-input [(ngModel)]="brightness" type="number" value="2"></ion-input>
+      <ion-label position="floating">Color</ion-label>
+      <ion-input [(ngModel)]="colorEffect" type="number" value="2"></ion-input>
+      <ion-button (click)="EffectColor()" color="success">Valid</ion-button>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Color Work by time</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Effect</ion-label>
+      <ion-input [(ngModel)]="effect" type="number" value="2"></ion-input>
+      <ion-label position="floating">Brightness</ion-label>
+      <ion-input [(ngModel)]="brightnessByTimes" type="number" value="2"></ion-input>
+      <ion-label position="floating">Color</ion-label>
+      <ion-input [(ngModel)]="colorByTimes" type="number" value="2"></ion-input>
+      <ion-label position="floating">Times</ion-label>
+      <ion-input [(ngModel)]="times" type="number" value="2"></ion-input>
+      <ion-button (click)="WorkTimes()" color="success">Valid</ion-button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

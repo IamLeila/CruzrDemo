@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Move robot joints</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Move a joint
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Joint name</ion-label>
+      <ion-select [(ngModel)]="selectedPart" placeholder="Select a joint">
+        <ion-select-option *ngFor="let val of partNames" [value]="val">{{val}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Angle move ([-2π, 2π])</ion-label>
+
+      <ion-range (ionChange)="updateAngle()" [(ngModel)]="angle" [max]="2 * Math.PI" [min]="-2 * Math.PI" step="0.01">
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Duration (sec)</ion-label>
+      <ion-input [(ngModel)]="duration" type="number" value="2"></ion-input>
+    </ion-item>
+
+    <ion-item button>
+      <ion-label>
+        Current angle : {{ currentAngle }}
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <h1>Joint move result code : {{ resCode }}</h1>
+
+  <ion-button (click)="stopJoints()" color="danger" expand="block">STOP</ion-button>
+</ion-content>

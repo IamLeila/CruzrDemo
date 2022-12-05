@@ -1,0 +1,7 @@
+{
+  "name": "cruzr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

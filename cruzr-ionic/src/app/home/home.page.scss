@@ -1,0 +1,67 @@
+  .background-image{
+    --background: linear-gradient(#6bb1e2, #7d4a99);
+  }
+  .button-upper-right-corner{
+    position: absolute;
+    right: 0%;
+  }
+  .button-upper-left{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+  }
+  .button-center-left{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+  }
+  .button-down-left{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+  }
+  .button-down-left-corner{
+    position: absolute;
+    top: 60%;
+    left: 0%
+  }
+  .button-upper-right{
+    position: absolute;
+    top: 15%;
+    right: 0%;
+  }
+  .button-center-right{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+  }
+  .button-down-right{
+    position: absolute;
+    top: 45%;
+    right: 0%;
+  }
+  .button-down-right-corner{
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    
+  }
+  .ion-card-left {
+    display: flex;
+    flex-direction: column;
+    width: 40% !important;
+    height: 73%;
+    position: absolute;
+    left: 9%;
+    top: 15%;
+  }
+  .ion-card-right {
+    display: flex;
+    flex-direction: column;
+    width: 40% !important;
+    height: 73%;
+    position: absolute;
+    right: 9%;
+    top: 15%;
+  }
+  

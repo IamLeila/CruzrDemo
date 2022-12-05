@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-toolbar class="background-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 700; font-size: 3rem; text-align:center;">Válassz egy táncot!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image" no-scroll padding>
+  <!--
+  <ion-card (click)="dance1()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">DURA</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance2()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">FADED</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance3()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">PANAMA</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance4()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">CURRY</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance5()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">SEAWEED</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance6()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">CRAYON</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance7()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">TOCATOCA</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance8()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">FLAMENCO</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance9()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">BBOOMBBOOM</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="dance10()" color="adjevtive">
+    <ion-card-header>
+      <ion-card-title style="font-weight: 700; font-size: 2rem; text-align:center; color: rgb(58, 54, 54);">NAXI</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+-->
+
+  
+  <div class="button-1">
+    <ion-button (click)="dance1()" color="primary" shape="round">
+      Dura
+    </ion-button>
+  </div>
+  <div class="button-2">
+    <ion-button (click)="dance2()" color="secondary" shape="round">
+      Faded
+    </ion-button>
+  </div>
+  <div class="button-3">
+    <ion-button (click)="dance3()" color="tertiary" shape="round">
+      Panama
+    </ion-button>
+  </div>
+  <div class="button-5">
+    <ion-button (click)="dance5()" color="success" shape="round">
+      Curry
+    </ion-button>
+  </div>
+  <div class="button-6">
+    <ion-button (click)="dance6()" color="warning" shape="round">
+      Seaweed
+    </ion-button>
+  </div>
+  <div class="button-7">
+    <ion-button (click)="dance7()" color="danger" shape="round">
+      Crayon
+    </ion-button>
+  </div>
+  <div class="button-8">
+    <ion-button (click)="dance8()" color="dark" shape="round">
+      TocaToca
+    </ion-button>
+  </div>
+  <div class="button-9">
+    <ion-button (click)="dance9()" color="medium" shape="round">
+      Flamenco
+    </ion-button>
+  </div>
+  <div class="button-10">
+    <ion-button (click)="dance10()" color="light" shape="round">
+      BBoomBBoom
+    </ion-button>
+  </div>
+  <div class="button-11">
+    <ion-button (click)="dance11()" color="plus" shape="round">
+      Naxi
+    </ion-button>
+  </div>
+
+<!--
+  <div class="button-1">
+    <img src="./assets/img/dura.png" style="width: 80%;" (click)="dance1()">
+  </div>
+  <div class="button-2">
+    <img src="./assets/img/faded.png" style="width: 25%;" (click)="dance2()">
+  </div>
+  <div class="button-3">
+    <img src="./assets/img/panama.png" style="width: 33%;" (click)="dance3()">
+  </div>
+  <div class="button-4">
+    <img src="./assets/img/polkka.png" style="width: 25%;" (click)="dance4()">
+  </div>
+  <div class="button-5">
+    <img src="./assets/img/curry.png" style="width: 15%;" (click)="dance5()">
+  </div>
+  <div class="button-6">
+    <img src="./assets/img/seaweed.png" style="width: 60%;" (click)="dance6()">
+  </div>
+  <div class="button-7">
+    <img src="./assets/img/crayon.png" style="width: 25%;" (click)="dance7()">
+  </div>
+  <div class="button-8">
+    <img src="./assets/img/toca.png" style="width: 15%;" (click)="dance8()">
+  </div>
+  <div class="button-9">
+    <img src="./assets/img/flamenco.png" style="width: 45%;" (click)="dance9()">
+  </div>
+  <div class="button-10">
+    <img src="./assets/img/bboom.png" style="width: 100%;" (click)="dance10()">
+  </div>
+  <div class="button-11">
+    <img src="./assets/img/naxi.png" style="width: 18%;" (click)="dance11()">
+  </div>
+-->
+</ion-content>

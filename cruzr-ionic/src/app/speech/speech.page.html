@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>TTS System</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Text to say</ion-label>
+    <ion-input [(ngModel)]="text" placeholder="Enter text...."></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Volume</ion-label>
+
+    <ion-range (ionChange)="speechSetTtsVolume()" [(ngModel)]="volume" [max]="100" [min]="0" step="1">
+    </ion-range>
+  </ion-item>
+
+  <ion-button (click)="speechStartTTS()" color="success" expand="block">Speak</ion-button>
+  <ion-button (click)="speechStopTTS()" color="danger" expand="block">STOP TTS</ion-button>
+
+
+</ion-content>
