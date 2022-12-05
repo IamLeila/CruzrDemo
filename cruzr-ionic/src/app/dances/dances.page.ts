@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CruzrSdk} from 'cruzrsdk';
+import {Howl, Howler} from 'howler';
 
 @Component({
   selector: 'app-dances',
@@ -14,6 +15,9 @@ export class DancesPage implements OnInit {
 
   constructor() {
   }
+
+  player: Howl = null;
+  isPlaying = false;
 
   ngOnInit() {
     CruzrSdk.getDanceList().then((res) => {
@@ -74,5 +78,45 @@ export class DancesPage implements OnInit {
   dance11() {
     this.stopDance();
     CruzrSdk.dance({danceName: 'Naxi'})
+  }
+
+  airportDance(){
+    if (this.player){
+      this.player.stop();
+    }
+    this.player = new Howl({
+      src: ['./assets/music/Repter.mp3'],
+      onplay: () => {
+        this.isPlaying = true;
+      }
+    });
+    this.player.play();
+    this.stopDance();
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+  }
+
+  fridayDance(){
+    if (this.player){
+      this.player.stop();
+    }
+    this.player = new Howl({
+      src: ['./assets/music/Friday.mp3'],
+      onplay: () => {
+        this.isPlaying = true;
+      }
+    });
+    this.player.play();
+    this.stopDance();
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+  }
+
+  //poses
+  hello(){
+    CruzrSdk.run({action: 'pose1'});
+  }
+  danceHello(){
+    CruzrSdk.run({action: 'pose1'});
   }
 }
