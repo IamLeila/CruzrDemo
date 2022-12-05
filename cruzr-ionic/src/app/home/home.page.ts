@@ -21,10 +21,10 @@ export class HomePage implements OnInit {
 
   constructor(private platform: Platform, public navCtrl: NavController) {
     this.platform = platform;
-    setTimeout(this.hello, 1500);
-    setTimeout(this.photo, 20000);
-    setInterval(this.hello, 100000);
-    setInterval(this.photo, 150000);  
+   // setTimeout(this.hello, 1500);
+    //setTimeout(this.photo, 20000);
+    //setInterval(this.hello, 100000);
+    //setInterval(this.photo, 150000);  
   }
   
   closeApp() { 
