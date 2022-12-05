@@ -108,8 +108,43 @@ export class DancesPage implements OnInit {
     });
     this.player.play();
     this.stopDance();
+    setTimeout(null,10000)
     setTimeout(this.hello, 1500);
     setTimeout(this.danceHello, 1500);
+    setTimeout(this.danceP2,1500);
+    setTimeout(this.danceNod);
+    setTimeout(this.danceGL,1500);
+    setTimeout(this.danceSA,1500);
+    setTimeout(this.danceP3,1500);
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+    setTimeout(this.danceP2,1500);
+    setTimeout(this.danceNod);
+    setTimeout(this.danceGL,1500);
+    setTimeout(this.danceSA,1500);
+    setTimeout(this.danceP3,1500);
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+    setTimeout(this.danceP2,1500);
+    setTimeout(this.danceNod);
+    setTimeout(this.danceGL,1500);
+    setTimeout(this.danceSA,1500);
+    setTimeout(this.danceP3,1500);
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+    setTimeout(this.danceP2,1500);
+    setTimeout(this.danceNod);
+    setTimeout(this.danceGL,1500);
+    setTimeout(this.danceSA,1500);
+    setTimeout(this.danceP3,1500);
+    setTimeout(this.hello, 1500);
+    setTimeout(this.danceHello, 1500);
+    setTimeout(this.danceP2,1500);
+    setTimeout(this.danceNod);
+    setTimeout(this.danceGL,1500);
+    setTimeout(this.danceSA,1500);
+    setTimeout(this.danceP3,1500);
+    
   }
 
   //poses
@@ -118,5 +153,23 @@ export class DancesPage implements OnInit {
   }
   danceHello(){
     CruzrSdk.run({action: 'pose1'});
+  }
+  danceNod(){
+    CruzrSdk.run({action: 'nod'});
+  }
+  danceP2(){
+    CruzrSdk.run({action: 'pose2'});
+  }
+  danceP3(){
+    CruzrSdk.run({action: 'pose3'});
+  }
+  danceGL(){
+    CruzrSdk.run({action: 'guideleft'});
+  }
+  danceGR(){
+    CruzrSdk.run({action: 'guideright'});
+  }
+  danceSA(){
+    CruzrSdk.run({action: 'swingarm'});
   }
 }
